@@ -1,0 +1,36 @@
+@import url(./reset.css);
+
+nav {
+  height: 56px;
+  width: auto;
+  background-color: aqua;
+}
+
+
+
+
+
+
+aside {
+  height: 100vh;
+  width: 218px;
+  background-color: pink;
+}
+
+aside .navButton{
+
+}
+
+
+
+
+
+
+
+main{
+
+}
+
+main .video{
+
+}
