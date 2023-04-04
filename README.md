@@ -5,7 +5,7 @@
 
 ## Preview da minha versão:
 
-![image]()
+![image](https://github.com/gitaminato/desafio2-css-modulo2-dio/blob/main/assets/images/preview-layout-youtube-grids.png)
 
 <hr>
 
