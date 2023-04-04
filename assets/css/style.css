@@ -1,36 +1,185 @@
 @import url(./reset.css);
 
+p,
+h1 {
+  font-family: Roboto;
+}
+
+svg {
+  width: 1.4rem;
+}
+
+@keyframes hoverButtons {
+  from {
+    opacity: 0.85;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Navegador Top */
+
 nav {
-  height: 56px;
-  width: auto;
-  background-color: aqua;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-color: white;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
+nav svg {
+  padding: 0.5rem;
+  background-color: transparent;
+  border-radius: 50px;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+nav svg:hover {
+  background-color: #e5e5e5;
+  cursor: pointer;
+  animation: hoverButtons 0.7s;
+}
 
+nav .centerNav svg:hover {
+  background-color: transparent;
+}
 
+img:hover {
+  cursor: pointer;
+}
 
+nav .leftNav {
+  display: flex;
+  align-items: center;
+  margin-left: 2.2rem;
+  gap: 1rem;
+}
 
-aside {
+nav .centerNav {
+  display: flex;
+  align-items: center;
+}
+
+nav .centerNav input {
+  width: 28.93rem;
+  height: 2rem;
+  border: 0.08px solid #cccccc;
+  border-radius: 25px 0 0 25px;
+  padding-left: 1rem;
+}
+
+nav .centerNav .searchButton {
+  border: 0.08px solid #cccccc;
+  border-radius: 0 25px 25px 0;
+  background: #f2f2f2;
+  width: 4rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav .centerNav .searchButton:hover {
+  cursor: pointer;
+  background-color: #e5e5e5;
+  animation: hoverButtons 0.7s;
+}
+
+nav .rightNav {
+  display: flex;
+  align-items: center;
+  margin-right: 2.06rem;
+  gap: 1rem;
+}
+
+nav .rightNav .avatar img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50px;
+}
+
+/* container */
+main {
+  display: flex;
   height: 100vh;
-  width: 218px;
-  background-color: pink;
+  width: 100vw;
+  margin-top: 4rem;
+  margin-left: 15rem;
+  margin-bottom: 2rem;
 }
 
-aside .navButton{
-
+/* Menu Lateral */
+aside {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  background-color: white;
+  height: 100vh;
+  min-width: 15rem;
+  margin-top: 1rem;
 }
 
-
-
-
-
-
-
-main{
-
+aside .navButton {
+  display: flex;
+  gap: 1.2rem;
+  margin: 1rem;
+  background-color: transparent;
+  border-radius: 50px;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
 }
 
-main .video{
+aside .navButton:hover {
+  background-color: #e5e5e5;
+  cursor: pointer;
+  animation: hoverButtons 0.7s;
+}
 
+/* Videos */
+main .gridVideos {
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  padding: 2rem;
+  gap: 1rem;
+}
+
+main .videos {
+  max-width: 380px;
+  max-height: 300px;
+}
+
+iframe {
+  width: 390px;
+  height: 220px;
+  border-radius: 15px;
+}
+
+main .separator {
+  display: flex;
+  justify-items: flex-start;
+  gap: 1rem;
+}
+
+main .separator img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50px;
+}
+
+main .videoDescription p {
+  margin-top: 0.2rem;
+  font-size: 0.7rem;
+  line-height: 0.8rem;
 }
